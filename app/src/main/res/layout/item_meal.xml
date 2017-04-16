@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="10dp">
+
+    <ImageView
+        android:id="@+id/imgMealAvar"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtMealName"
+        android:layout_width="match_parent"
+        android:textStyle="bold"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgMealAvar"
+        android:gravity="center_vertical"
+        android:text="Món 1" />
+
+    <TextView
+        android:id="@+id/txtMealCost"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtMealName"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imgMealAvar"
+        android:gravity="center_vertical"
+        android:text="100000VND" />
+
+    <TextView
+        android:id="@+id/txtMealCount"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtMealName"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txtMealCost"
+        android:gravity="right|center_vertical"
+        android:text="1"
+        android:textStyle="bold" />
+</RelativeLayout>
