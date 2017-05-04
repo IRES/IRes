@@ -117,8 +117,8 @@ public class DatabaseHandler extends SQLiteOpenHelper {
     }
 
     // Getting All Contacts
-    public List<Employee> getAllEmployee() {
-        List<Employee> employeeList = new ArrayList<Employee>();
+    public ArrayList<Employee> getAllEmployee() {
+        ArrayList<Employee> employeeList = new ArrayList<Employee>();
         // Select All Query
         String selectQuery = "SELECT  * FROM " + TABLE_EMPLOYEES;
 
