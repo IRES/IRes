@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity
     public final String PUT_TABLE_NAME = "TABLE_NAME";
     public final String PUT_TABLE_ID = "TABLE_ID";
     public final String PUT_TABLE_STATUS = "TABLE_STATUS";
+
     private GridView grvTable;
     private TableAdapter adapter;
 

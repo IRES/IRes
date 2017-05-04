@@ -1,48 +1,64 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="10dp"
-    tools:context="cnpm.com.ires.activities.LoginActivity">
+    android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imgIResAvatar"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:src="@mipmap/ic_launcher" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="100px" />
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background_main_leader" />>
 
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/txtUsername"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="User name" />
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="10px" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-    <android.support.design.widget.TextInputEditText
-        android:id="@+id/txtPassword"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:hint="Password"
-        android:password="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="10px" />
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtUsername"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="UserName"
+                android:textColor="#444444" />
 
-    <Button
-        android:id="@+id/btnLogin"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:background="@drawable/table_selector"
-        android:text="LOGIN" />
-</LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/txtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="Password"
+                android:password="true"
+                android:textColor="#444444" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:background="@drawable/table_selector"
+                android:text="SIGN IN "
+                android:textColor="#be00cf" />
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
